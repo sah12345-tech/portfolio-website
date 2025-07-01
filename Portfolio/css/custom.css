@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* common css */
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;    
+}
+
+
+/* header */
+.navbar-brand{
+    font-size: 1.5rem;
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+
+
+/* home */
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.home-img img{
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: 0 0 25px var(--main-color);
+  cursor: pointer;
+  animation: floatImage 4s ease-in-out infinite;
+  transition: 0.4s ease;
+}
+.home-img img:hover{
+  box-shadow: 0 0 25px var(--main-color),
+              0 0 35px var(--main-color),
+              0 0 45px var(--main-color);
+}
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2.4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.home-content{
+  margin-left: 5rem;
+}
+.home-content h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.home-content h3:nth-of-type(2){
+  margin-bottom: 2rem;
+}
+span{
+  color: var(--main-color);
+}
+.home-content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.home-content p{
+  font-size: 1.6rem;
+}
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #527cec;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #3d5fc3;
+    }
+
+/* resume */
+    section {
+      padding: 30px 0;
+      background-color: #f8f9fa;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .about {
+      color: #555;
+      font-size: 16px;
+    }
+
+/* portfolio */
+#portfolio{
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+#portfolio img{
+    margin-top: 30px;
+    width: 100%;
+    height: 220px;
+}
+#portfolio .grid{
+    position: relative;
+    width: 100%;
+}
+#portfolio .grid .overlay{
+    position: absolute;
+    margin-top: 30px;
+    top: 0;bottom: 0;
+    left: 0; right: 0;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #527cec;
+}
+#portfolio .grid:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: #fff;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* contact */
+    #contact {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .submit-message {
+      background-color: #527cec;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    .submit-message:hover {
+      background-color: #3d5fc3;
+    }
+
+/* footer */
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 40px 0;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    footer ul li {
+      padding: 5px 0;
+    }
+
+    #social {
+      text-align: right;
+    }
+
+    #social li {
+      display: inline-block;
+      margin-left: 1rem;
+    }
+
+    #social a {
+      color: #ccc;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+
+    #social a:hover {
+      color: #527cec;
+    }
+
+    .back-to-top {
+      color: #fff;
+      font-size: 2rem;
+    }
+
+    .back-to-top:hover {
+      color: #527cec;
+      text-decoration: none;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #444;
+      margin-top: 20px;
+      padding-top: 20px;
+      font-size: 0.9rem;
+    }
+
+
